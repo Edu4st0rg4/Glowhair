@@ -1,0 +1,20 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 02/09/2020 06:16
+*/
+
+/* No necesitas definir @font-face si estás usando imágenes en lugar de fuentes */
+
+[class^="flaticon-"], [class*=" flaticon-"] {   
+  display: inline-block;
+  width: 24px; /* Ajusta el ancho según necesites */
+  height: 24px; /* Ajusta la altura según necesites */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* Ajusta el tamaño de la imagen según necesites */
+}
+
+.flaticon-workout-2 { background-image: url("../font/icono1.png"); }
+.flaticon-workout { background-image: url("../font/icono2.png"); }
+.flaticon-workout-1 { background-image: url("../font/icono3.png"); }
+/* Continúa con el resto de tus clases y sus respectivas imágenes */
