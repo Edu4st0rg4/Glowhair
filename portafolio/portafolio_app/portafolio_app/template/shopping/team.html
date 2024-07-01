@@ -1,0 +1,145 @@
+{% extends "ecommerce-main.html" %}{% load static %}
+{% block title %}Portafolio{% endblock %}
+{% block content %}
+    <!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Portafolio</h2>
+            </div>
+            <div class="col-12">
+                <a href="{% url 'index' %}" target="_blank">Home</a>
+                <a href="">Portafolio</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Team Start -->
+<div class="team">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Estilista Pamela Morgado</p>
+            <h2>Trabajos Realizados</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo1.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/C6CC8nMrRLo/?img_index=1" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Juanita Alcachofa</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo2.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/C6CCroxrgT1/?img_index=1" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Juana de Arco</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo3.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/C6CCY-nLRW-/?img_index=1" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Shakira</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo4.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/C4ovlEINc0r/?img_index=1" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Dua Lipa</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo5.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/C17WOXNLM7y/?img_index=1"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Fergie</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo6.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/CzB5EPgLY_9/?img_index=1"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Karol G</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo7.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/C0wogUXruY0/?img_index=1"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Shakira</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="1.4s">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/pelo8.png' %}" alt="Image">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/p/Cwn-PFYL-Rb/?img_index=1"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-text">
+                        <h2>Taylor Swift</h2>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+{% endblock %}    
+

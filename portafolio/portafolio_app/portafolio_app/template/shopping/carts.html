@@ -1,0 +1,60 @@
+{% extends "ecommerce-main.html" %}{% load static %}
+{% block title %}Carrito de compras{% endblock %}
+{% block content %}
+
+<!-- Discount Start -->
+<div class="discount wow zoomIn" data-wow-delay="0.1s">
+  <div class="container">
+      <div class="section-header text-center">
+          <p>Descuentos</p>
+          <h2>Obtén <span>10%</span> Solo debes estar atento a nuestras redes</h2>
+      </div>
+      <div class="container discount-text">
+          <p>
+              ¡Fechas especiales como Día de la Madre, Navidad, Día del Profesor y más! ¡Síguenos en nuestras redes sociales y no te pierdas nuestras promociones! 
+          </p>
+          <a href=" " class="btn" target="_blank">¡Comprar!</a>
+      </div>
+  </div>
+</div>
+<!-- Discount End -->
+
+<table id="tbl-products" class="table" style="max-width:1020px;margin: auto;">
+  <caption>Productos en el carrito</caption>
+  <thead>
+    <tr>
+      <th scope="col">Producto</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for product in products %}
+    <tr>
+      <td>
+        <figure class="figure">
+          <img src="{{product.image}}" style="max-width: 150px; max-height: 150px;" class="img-thumbnail" alt="">
+          <figcaption class="figure-caption text-center">{{product.name}}</figcaption>
+          <figcaption class="figure-caption text-center">{{product.description}}</figcaption>
+        </figure>
+      </td>
+      <td>{{product.quantity}}</td>
+      <td>$ {{product.sale_price}}</td>
+      <td>$ {{product.total}}</td>
+      {% endfor %}
+    </tr>
+    <form id='frm-pay' name="pay" action="webpay-plus-create" method="POST"> {% csrf_token %}
+      <input id='txt-amount' type="hidden" name="amount" value="{{total}}" />
+      <input id='txt-buy_order' type="hidden" name="buy_order" value="{{buy_order}}" />
+      <input id='txt-session_id' type="hidden" name="session_id" value="{{session_id}}" />
+      <tr>
+        <td></td>
+        <td><strong>Total</strong></td>
+        <td><strong>$ {{total}}</strong></td>
+        <td><button class="alert alert-primary">Pagar</button></td>
+      </tr>
+    </form>
+  </tbody>
+</table>
+{% endblock %}

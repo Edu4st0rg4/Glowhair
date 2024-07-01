@@ -1,0 +1,120 @@
+{% extends "ecommerce-main.html" %}{% load static %}
+{% block title %}Contacto{% endblock %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Contacto</h2>
+            </div>
+            <div class="col-12">
+                <a href="{% url 'index' %}" target="_blank">Home</a>
+                <a href="">Contacto</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Contact Start -->
+<div class="contact">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Háblanos</p>
+            <h2>¡Para cualquier consulta o sugerencia!</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.2s">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <div class="contact-text">
+                            <h2>Ubicación</h2>
+                            <p>Avenida Siempre Viva 742, Springfield.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.4s">
+                        <i class="fa fa-phone-alt"></i>
+                        <div class="contact-text">
+                            <h2>Teléfono</h2>
+                            <p>+56912345678</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.6s">
+                        <i class="far fa-envelope"></i>
+                        <div class="contact-text">
+                            <h2>Email</h2>
+                            <p>info@ejemplo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required="required" data-validation-required-message="Ingrese su nombre acá" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required="required" data-validation-required-message="Ingrese su email acá" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Ingrese asunto acá" />
+                            <p class="help-block text-danger"></p>
+                        
+                            <div class="contact wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="container">
+                                    <div class="section-header text-center">
+                                        <p>Contacto</p>
+                                        <h2>Envíanos un Mensaje</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                                            <div class="contact-form">
+                                                {% if success %}
+                                                    <div class="alert alert-success" role="alert">
+                                                        ¡Mensaje enviado con éxito!
+                                                    </div>
+                                                {% endif %}
+                                                <form method="post" novalidate>
+                                                    {% csrf_token %}
+                                                    <div class="control-group">
+                                                        {{ form.name }}
+                                                        <p class="help-block text-danger">{{ form.name.errors }}</p>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        {{ form.email }}
+                                                        <p class="help-block text-danger">{{ form.email.errors }}</p>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        {{ form.subject }}
+                                                        <p class="help-block text-danger">{{ form.subject.errors }}</p>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        {{ form.message }}
+                                                        <p class="help-block text-danger">{{ form.message.errors }}</p>
+                                                    </div>
+                                                    <div>
+                                                        <button class="btn" type="submit" id="sendMessageButton">Enviar Mensaje</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+                                
+{% endblock %}                    

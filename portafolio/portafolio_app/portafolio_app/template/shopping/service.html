@@ -1,0 +1,340 @@
+{% extends "ecommerce-main.html" %}{% load static %}
+{% block title %}Servicios{% endblock %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Servicios</h2>
+            </div>
+            <div class="col-12">
+                <a href="{% url 'index' %}" target="_blank">Home</a>
+                <a href="">Servicios</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Valores</p>
+            <h2>¡Aviso!</h2>
+            <p>Cualquier servicio extra se cobra aparte. Ya sea fondo, corrección, corte, etc.</p>
+            <p>Respecto al corte de puntas adicional en cualquier servicio de color tiene un costo de $5.000.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout-1"></i>
+                    </div>
+                    <h3>Corte de cabello</h3>
+                    <p>
+                        Normal $8.000
+                    </p>
+                    <p>
+                        Con lavado $13.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout-2"></i>
+                    </div>
+                    <h3>Crecimiento /Cub. de canas</h3>
+                    <p>
+                        Sin tinte incluído $18.000
+                    </p>
+                    <p>
+                        Con tinte incluído $22.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Baño de color</h3>
+                    <p>
+                        Desde (melena) $30.000
+                    </p>
+                    <p>
+                        Fondo desde $18.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout-2"></i>
+                    </div>
+                    <h3>Promoción</h3>
+                    <p>
+                        Crecimiento + baño color (Desde) $40.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/Largos.png' %}" height="240px">
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout-1"></i>
+                    </div>
+                    <h3>Color global</h3>
+                    <p>
+                        Melena (S) $30.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $40.000
+                    </p>
+                    <p>
+                        Cintura (L) $55.000
+                    </p>
+                    <p>
+                        Cadera (XL) $65.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Balayage / Babylight</h3>
+                    <p>
+                        Melena (S) $55.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $70.000 - $80.000
+                    </p>
+                    <p>
+                        Cintura (L) $90.000 - $100.000
+                    </p>
+                    <p>
+                        Cadera (XL) $110.000 - $120.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Super Blond / Babyblond</h3>
+                    <p>
+                        Melena (S) $60.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $75.000 - $85.000
+                    </p>
+                    <p>
+                        Cintura (L) $95.000 - $105.000
+                    </p>
+                    <p>
+                        Cadera (XL) $115.000 - $125.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Full Blond/ Gorra (se aclara el 90% de todo el cabello)</h3>
+                    <p>
+                        Melena (S) $60.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $75.000 - $85.000
+                    </p>
+                    <p>
+                        Cintura (L) $100.000 - $110.000
+                    </p>
+                    <p>
+                        Cadera (XL) $120.000 - $130.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Mechas / Visos Tradicionales</h3>
+                    <p>
+                        Melena (S) $50.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $60.000 - $70.000
+                    </p>
+                    <p>
+                        Cintura (L) $75.000 - $85.000
+                    </p>
+                    <p>
+                        Cadera (XL) $85.000 - $95.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Shatush (Correción color)</h3>
+                    <p>
+                        Melena (S) $45.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $55.000
+                    </p>
+                    <p>
+                        Cintura (L) $65.000
+                    </p>
+                    <p>
+                        Cadera (XL) $75.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Morena Iluminada (Sin deco)</h3>
+                    <p>
+                        Melena (S) $47.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $57.000
+                    </p>
+                    <p>
+                        Cintura (L) $68.000
+                    </p>
+                    <p>
+                        Cadera (XL) $80.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Bloques de color</h3>
+                    <p>
+                        El valor dependerá de cantidad, largo color $30.000 (Desde)
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Botox Richee o Matizador</h3>
+                    <p>
+                        Melena (S) $26.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $36.000
+                    </p>
+                    <p>
+                        Cintura (L) $48.000
+                    </p>
+                    <p>
+                        Cadera (XL) $58.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Alisado / Botox Alisante</h3>
+                    <p>
+                        Melena (S) $23.000
+                    </p>
+                    <p>
+                        Zona escapular (M) $33.000
+                    </p>
+                    <p>
+                        Cintura (L) $45.000
+                    </p>
+                    <p>
+                        Cadera (XL) $55.000
+                    </p>
+                </div>
+            </div>                       
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Peinados</h3>
+                    <p>
+                        Simple $18.000
+                    </p>
+                    <p>
+                        Trenzas incluídas $25.000
+                    </p>
+                    <p>
+                        Trenza sola $1.500 c/u
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Lifting Pestañas</h3>
+                    <p>
+                        Solo Lifting $12.000
+                    </p>
+                    <p>
+                        Lifting + Tinte $14.000
+                    </p>
+                    <p>
+                        Lifting + Tinte + Keratin $16.000
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="flaticon-workout"></i>
+                    </div>
+                    <h3>Esmalte Permatente</h3>
+                    <p>
+                        1 o 2 colores clásicos $13.000
+                    </p>
+                    <p>
+                        Degrade o 3 colores $15.000
+                    </p>
+                    <p>
+                        Diseño Simple $17.000
+                    </p>
+                    <p>
+                        Full Diseño $19.000
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+{% endblock %}    

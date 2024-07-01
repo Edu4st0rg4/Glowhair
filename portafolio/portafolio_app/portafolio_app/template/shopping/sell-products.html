@@ -1,0 +1,63 @@
+{% extends "ecommerce-main.html" %}{% load static %}
+{% block title %}Productos{% endblock %}
+{% block content %}
+
+    <div class="class">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Nuestros Productos</p>
+                <h2>¡Gran variedad de artículos!</h2>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Class Start -->
+    
+    <div class="class">
+        <div class="container">
+            <div class="row class-container justify-content-center">
+                <!-- Aquí puedes iterar sobre tus productos y generar cada item -->
+                {% for product in products %}
+                <div class="col-lg-4 col-md-6 col-sm-12 class-item filter-{{ product.category }} wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="class-wrap">
+                        <div class="class-img">
+                            <img src="{{ product.image }}" alt="Image">
+                        </div>
+                        <div class="class-text">
+                            <div class="class-teacher">
+                                <a class="btn btn-outline-success ms-2" href="/sell-products?product_id={{ product.id }}"></a>
+                                <h3>{{ product.name }}</h3>
+                                <a href="/sell-products?product_id={{ product.id }}">+</a>                            
+                            </div>
+                            <div class="text-center">{{ product.name }}</div>
+                            <div class="text-center">{{ product.sell_price }}</div>
+                            <div class="text-center">${{ product.sale_price }}</div>
+                            <div class="class-meta">
+                                <p><i class="far fa-dollar-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Discount Start -->
+    <div class="discount wow zoomIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Descuentos</p>
+                <h2>Obtén <span>10%</span> Solo debes estar atento a nuestras redes</h2>
+            </div>
+            <div class="container discount-text">
+                <p>
+                    ¡Fechas especiales como Día de la Madre, Navidad, Día del Profesor y más! ¡Síguenos en nuestras redes sociales y no te pierdas nuestras promociones! 
+                </p>
+                <a href=" " class="btn" target="">¡Comprar!</a>
+            </div>
+        </div>
+    </div>
+    <!-- Discount End -->
+</div>
+{% endblock %}
